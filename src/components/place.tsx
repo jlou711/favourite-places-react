@@ -20,7 +20,12 @@ export function Place(props: Location): JSX.Element {
           </a>
           <div className="loc-details">
             📍{" "}
-            <a className="loc-caption" href={props.map} target="_blank" rel="noreferrer">
+            <a
+              className="loc-caption"
+              href={props.map}
+              target="_blank"
+              rel="noreferrer"
+            >
               {props.name}, {props.country}
             </a>
             <p className="loc-desc">{props.description}</p>
