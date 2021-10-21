@@ -5,6 +5,8 @@ export class Location {
   image: string;
   map: string;
   description: string;
+  img_credits?: string;
+  alt?: string;
 
   constructor(
     title: string,
@@ -12,7 +14,9 @@ export class Location {
     country: string,
     image: string,
     map: string,
-    description: string
+    description: string,
+    img_credits?: string,
+    alt?: string
   ) {
     this.title = title;
     this.name = name;
@@ -20,5 +24,7 @@ export class Location {
     this.image = image;
     this.map = map;
     this.description = description;
+    this.img_credits = img_credits;
+    this.alt = alt;
   }
 }

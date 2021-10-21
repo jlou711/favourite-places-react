@@ -1,19 +1,51 @@
-h1 {
-  color: olive;
+/* Color Palette - Pastel Dreams
+
+Yellow
+#FBE7C6
+
+Mint
+#B4F8C8
+
+Tiffany Blue
+#A0E7E5
+
+Hot Pink
+#FFAEBC */
+
+body {
+  background-color: #fbe7c6;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
-header,
-body {
-  background-color: linen;
+section {
+  background-color: rgba(160, 231, 229, 0.7);
+}
+
+footer {
+  font-size: small;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+}
+
+h1 {
+  color: #ffaebc;
+}
+
+h2 {
+  color: white;
+  font-size: xx-large;
 }
 
 h1,
 h2 {
   text-align: center;
+  padding-top: 20px;
+  font-family: "Courier New", Courier, monospace;
 }
 
 img {
-  width: 50%;
+  width: 70%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -21,4 +53,14 @@ img {
 
 .loc-details {
   text-align: center;
+}
+
+.loc-caption {
+  font: caption;
+  font-size: medium;
+}
+
+.loc-desc {
+  padding-bottom: 20px;
+  font-family: "Courier New", Courier, monospace;
 }
