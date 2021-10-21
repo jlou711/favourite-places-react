@@ -32,7 +32,7 @@ function App(): JSX.Element {
     "https://unsplash.com/@agk42",
     "Side street of Tokyo at night"
   );
-  const myListOfPlaces = [queenstown, amalfi,tokyo];
+  const myListOfPlaces = [queenstown, amalfi, tokyo];
   return (
     <>
       {myListOfPlaces.map((loc: Location, index: number) => (
@@ -45,7 +45,7 @@ function App(): JSX.Element {
           map={loc.map}
           description={loc.description}
           alt={loc.alt}
-          img_credits = {loc.img_credits}
+          img_credits={loc.img_credits}
         />
       ))}
     </>
