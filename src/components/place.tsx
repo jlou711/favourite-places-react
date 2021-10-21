@@ -3,6 +3,7 @@ interface Location {
     name: string,
     country: string,
     image: string,
+    alt?: string,
     map: string,
     description: string
 }
@@ -10,12 +11,14 @@ interface Location {
 export function Place(props: Location): JSX.Element {
   return (
   <>
-    <p>Title: {props.title}</p>
-    <p>Name: {props.name}</p>
-    <p>Country: {props.country}</p>
-    <p>Image: {props.image}</p>
-    <p>Map: {props.map}</p>
-    <p>Description: {props.description}</p>
+    <div>
+        <h2>{props.title}</h2>
+        <img src={props.image} alt={props.alt}/>
+        <div className="loc-details">
+            📍 <a href={props.map} target="_blank">{props.name}, {props.country}</a>
+            <p>Description: {props.description}</p>
+        </div>
+    </div>
   </>
   )
 }

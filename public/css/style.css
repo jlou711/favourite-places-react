@@ -1,0 +1,24 @@
+h1 {
+  color: olive;
+}
+
+header,
+body {
+  background-color: linen;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+img {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.loc-details {
+  text-align: center;
+}
